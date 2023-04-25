@@ -1,0 +1,21 @@
+/* Add or modify the following CSS rules */
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slide {
+  display: flex; /* Add display: flex */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  min-width: 100%;
+  transition: 0.5s;
+}
+
+.slide > img {
+  width: 80%;
+  height: 750px; /* Set a fixed height */
+  object-fit: cover; /* Set object-fit property to maintain aspect ratio */
+}
