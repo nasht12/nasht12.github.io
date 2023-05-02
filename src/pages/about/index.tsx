@@ -6,6 +6,7 @@ import {
   faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
 import Layout from "../../components/Layout/Layout";
+import styles from "./about.module.css";
 
 const About: React.FC = () => {
   return (
@@ -16,21 +17,33 @@ const About: React.FC = () => {
         in Computer Science. Interested in all things web3 and AI.
       </p>
       <div style={{ marginTop: "1rem" }}>
-        <a
-          href="https://github.com/nasht12"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ marginRight: "1rem" }}
-        >
-          <FontAwesomeIcon icon={faGithub} size="2x" />
-        </a>
-        <a
-          href="https://linkedin.com/in/abhinashtummala"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faLinkedin} size="2x" />
-        </a>
+        <div className="icon-wrapper">
+          <a
+            href="https://github.com/nasht12"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ marginRight: "1rem" }}
+          >
+            <FontAwesomeIcon
+              icon={faGithub}
+              size="2x"
+              // className="iconscaletransition"
+            />
+          </a>
+        </div>
+        <div className="icon-wrapper">
+          <a
+            href="https://linkedin.com/in/abhinashtummala"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              size="2x"
+              // className="iconscaletransition"
+            />
+          </a>
+        </div>
         <p
           style={{
             display: "inline-block",
