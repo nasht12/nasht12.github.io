@@ -10,6 +10,6 @@ Following are some of the key characteristics that we aim to benift by building 
 4. Interoperability: ERC721 and ERC1155 are both widely adopted standards for NFTs on Ethereum, which means that tokenized AI models can be easily integrated into other blockchain-based applications or platforms. This can help to create a more interconnected ecosystem of AI models and applications.
 5. Value creation: Tokenizing an AI model can create a new asset class that can be bought, sold, and traded on cryptocurrency exchanges. This can potentially create new revenue streams for AI model creators and incentivize the development of high-quality models.
 
-Project Link:
+**Project Link:**
 
 [https://github.com/nasht12/ethdenver-model-token](https://github.com/nasht12/ethdenver-model-token)

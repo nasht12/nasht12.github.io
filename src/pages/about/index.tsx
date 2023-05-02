@@ -13,7 +13,7 @@ const About: React.FC = () => {
       {/* Your page content goes here */}{" "}
       <p style={{ marginTop: "0.5rem" }}>
         Software engineer based in Seattle with a Bachelor and Master’s Degree
-        in Computer Science. I’m interested in all things web3 and AI.
+        in Computer Science. Interested in all things web3 and AI.
       </p>
       <div style={{ marginTop: "1rem" }}>
         <a

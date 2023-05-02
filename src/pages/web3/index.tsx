@@ -23,6 +23,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   try {
     const res = await fetch("http://localhost:3000/api/articles");
     const data = await res.json();
+    console.log("Data from API:", data);
 
     return {
       props: {
