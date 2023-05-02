@@ -4,14 +4,14 @@ import Layout from "../../components/Layout/Layout";
 import ArticleList from "../../components/ArticleList/ArticleList";
 
 interface ArticlesPageProps {
-  articles: { filename: string; content: string }[];
+  aiwriteups: { filename: string; content: string }[];
 }
 
-const AI: React.FC<ArticlesPageProps> = ({ articles }) => {
+const AI: React.FC<ArticlesPageProps> = ({ aiwriteups }) => {
   return (
     <Layout>
-      <h1>AI Writeups</h1>
-      <ArticleList articles={articles} />
+      <h1 style={{ marginTop: "0.5rem" }}>AI Writeups</h1>
+      <ArticleList articles={aiwriteups} />
     </Layout>
   );
 };
@@ -26,7 +26,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
 
     return {
       props: {
-        articles: data.articles || [],
+        aiwriteups: data.aiwriteups || [],
       },
     };
   } catch (error) {

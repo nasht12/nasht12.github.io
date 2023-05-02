@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../components/Layout/Layout";
 import ImageSlider from "../../components/ImageSlider/ImageSlider";
+import styles from "./travel.module.css";
 
 const About: React.FC = () => {
   const images = [
@@ -13,10 +14,12 @@ const About: React.FC = () => {
   ];
   return (
     <Layout>
-      <div>
+      <div style={{ marginTop: "0.5rem" }}>
         <h1>Travel</h1>
-        <p>Washington</p>
-        <ImageSlider images={images} />
+        <div className="imageSliderContainer">
+          <p>Washington</p>
+          <ImageSlider images={images} />
+        </div>
         <p>Oregon</p>
         <p>California</p>
         <p>Colorado</p>

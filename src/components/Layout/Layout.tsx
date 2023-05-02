@@ -8,12 +8,18 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <main
-      className={`flex min-h-screen items-start justify-between p-24 ${styles.container}`}
-    >
-      <Menu />
-      <div className={styles.content}>{children}</div>
-    </main>
+    <>
+      <div style={{ marginTop: "4rem", marginLeft: "6rem" }}>
+        <p>Abhinash Tummala</p>
+      </div>
+      <main
+        className={`flex min-h-screen items-start justify-between p-24 ${styles.container}`}
+      >
+        {" "}
+        <Menu />
+        <div className={styles.content}>{children}</div>
+      </main>
+    </>
   );
 };
 
