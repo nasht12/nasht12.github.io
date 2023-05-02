@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import styles from "./ImageSlider.module.css";
 
 interface ImageSliderProps {
@@ -30,7 +31,12 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
             transform: `translateX(-${activeIndex * 100}%)`,
           }}
         >
-          <img src={image} alt={`Slide ${index + 1}`} />
+          <Image
+            src={image}
+            alt={`Slide ${index + 1}`}
+            width={1600} // 16 * 100
+            height={900} // 9 * 100
+          />
         </div>
       ))}
     </div>
