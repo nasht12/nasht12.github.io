@@ -11,3 +11,11 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
 }
+
+/* globals.css */
+.icon-wrapper {
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+  margin-right: 1em;
+}
