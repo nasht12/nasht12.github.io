@@ -9,7 +9,7 @@ const About: React.FC = () => {
     "https://cdn.discordapp.com/attachments/416094051339862016/1100205711004274778/DSCF7611.JPG",
     "https://cdn.discordapp.com/attachments/416094051339862016/1100205298226053230/DSCF8881.JPG",
     "https://cdn.discordapp.com/attachments/416094051339862016/1100205711817986090/leavenworth_road.JPG",
-    "https://via.placeholder.com/900x300?text=Slide+1",
+    // "https://via.placeholder.com/900x300?text=Slide+1",
   ];
   return (
     <Layout>
