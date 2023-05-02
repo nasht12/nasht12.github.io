@@ -4,7 +4,7 @@
 
 ERC-3525 is a Semi-Fungible token standard designed by Solv Protocol to address the limitations of ERC-20 and ERC-721 token standards. It combines the divisibility of ERC-20 tokens and the information description capabilities of ERC-721. The ERC-3525 token contains an ID property, units, and a slot, allowing token sharding and making it easier to manage and increase liquidity. Solv Protocol was the first to use ERC-3525 in Initial Voucher Offerings (IVOs), which they use to distribute project tokens to the community. ERC-3525 tokens created in IVO projects can be listed on marketplaces such as Solv's IVO Market and Binance NFT.
 
-\***\*What can ERC-3525 Tokens be used for?\*\***
+**What can ERC-3525 Tokens be used for?**
 
 ERC-3525 tokens are used as digital assets for various purposes, such as:
 

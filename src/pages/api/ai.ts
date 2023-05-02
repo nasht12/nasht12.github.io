@@ -7,7 +7,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   try {
-    const aiDirectory = path.join(process.cwd(), "src", "content", "ai");
+    const aiDirectory = path.join(process.cwd(), "public", "content", "ai");
     const filenames = fs
       .readdirSync(aiDirectory)
       .filter((file) => file.endsWith(".md"));

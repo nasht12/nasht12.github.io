@@ -7,7 +7,12 @@ export default async function handler(
   res: NextApiResponse
 ) {
   try {
-    const articlesDirectory = path.join(process.cwd(), "src", "articles");
+    const articlesDirectory = path.join(
+      process.cwd(),
+      "public",
+      "content",
+      "articles"
+    );
     const filenames = fs
       .readdirSync(articlesDirectory)
       .filter((file) => file.endsWith(".md"));

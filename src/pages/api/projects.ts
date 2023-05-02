@@ -9,7 +9,7 @@ export default async function handler(
   try {
     const projectsDirectory = path.join(
       process.cwd(),
-      "src",
+      "public",
       "content",
       "projects"
     );
