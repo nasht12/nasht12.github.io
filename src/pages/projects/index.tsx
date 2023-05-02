@@ -21,7 +21,8 @@ export default AI;
 // src/pages/articlesPage.tsx
 export const getServerSideProps: GetServerSideProps = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/projects");
+    const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "";
+    const res = await fetch(`${apiUrl}/api/projects`);
     const data = await res.json();
 
     return {
