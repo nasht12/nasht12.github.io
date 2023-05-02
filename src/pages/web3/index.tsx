@@ -10,7 +10,7 @@ interface ArticlesPageProps {
 const Web3: React.FC<ArticlesPageProps> = ({ articles }) => {
   return (
     <Layout>
-      <h1>Articles</h1>
+      <h1 style={{ marginTop: "0.5rem" }}>Web3 Writeups</h1>
       <ArticleList articles={articles} />
     </Layout>
   );

@@ -7,13 +7,18 @@ export default async function handler(
   res: NextApiResponse
 ) {
   try {
-    const aiDirectory = path.join(process.cwd(), "src", "content", "ai");
+    const projectsDirectory = path.join(
+      process.cwd(),
+      "src",
+      "content",
+      "projects"
+    );
     const filenames = fs
-      .readdirSync(aiDirectory)
+      .readdirSync(projectsDirectory)
       .filter((file) => file.endsWith(".md"));
 
-    const aiwriteups = filenames.map((filename) => {
-      const filePath = path.join(aiDirectory, filename);
+    const projects = filenames.map((filename) => {
+      const filePath = path.join(projectsDirectory, filename);
       const content = fs.readFileSync(filePath, "utf8");
 
       return {
@@ -22,10 +27,10 @@ export default async function handler(
       };
     });
 
-    res.status(200).json({ aiwriteups });
+    res.status(200).json({ projects });
   } catch (error) {
     res
       .status(500)
-      .json({ error: "An error occurred while fetching ai writeups" });
+      .json({ error: "An error occurred while fetching project writeups" });
   }
 }
