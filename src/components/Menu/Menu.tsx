@@ -6,7 +6,6 @@ const Menu: React.FC = () => {
   const menuItems = [
     "About",
     "Projects",
-    // "Writings",
     "AI",
     "Web3",
     "Travel",

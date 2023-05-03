@@ -24,7 +24,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
     const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "";
     const res = await fetch(`${apiUrl}/api/ai`);
     const data = await res.json();
-    console.log("Data from API:", data);
 
     return {
       props: {

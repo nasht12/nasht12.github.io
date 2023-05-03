@@ -9,7 +9,7 @@ interface ImageSliderProps {
 
 const ImageSlider: React.FC<ImageSliderProps> = ({
   images,
-  interval = 3000,
+  interval = 3500,
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
