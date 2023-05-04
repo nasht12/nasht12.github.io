@@ -10,7 +10,7 @@ interface ArticlesPageProps {
 const AI: React.FC<ArticlesPageProps> = ({ projects }) => {
   return (
     <Layout>
-      <h1 style={{ marginTop: "0.5rem" }}>Projects</h1>
+      <h1 style={{ marginTop: "0.5rem" }}><strong>Projects</strong></h1>
       <ArticleList articles={projects} />
     </Layout>
   );

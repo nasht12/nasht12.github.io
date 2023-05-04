@@ -4,6 +4,7 @@ import styles from "./books.module.css";
 
 const About: React.FC = () => {
   const itemList2023 = [
+    "The Buried Giant by Kazuo Ishiguro",
     "I am a Cat by Natsume Sōseki",
     "The Seven Moons of Maali Almeida by Shehan Karunatilaka",
     "The Pale King by David Foster Wallace",
@@ -28,7 +29,7 @@ const About: React.FC = () => {
   return (
     <Layout>
       <div>
-        <h1 style={{ marginTop: "0.5rem" }}>Reading List</h1>
+        <h1 style={{ marginTop: "0.5rem" }}><strong>Reading List</strong></h1>
         <b>2023</b>
         <ul className={styles.list}>
           {itemList2023.map((item, index) => (
