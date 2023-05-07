@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -6,9 +6,12 @@ import {
   faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
 import Layout from "../../components/Layout/Layout";
+import { Canvas } from '@react-three/fiber';
+import SphereWithLight from '@/components/SphereWithLight/SphereWithLight';
 import styles from "./about.module.css";
 
 const About: React.FC = () => {
+
   return (
     <Layout>
       {/* Your page content goes here */}{" "}
@@ -54,6 +57,11 @@ const About: React.FC = () => {
           Can be reached at
         </p>
         <span>abhinash.t12@gmail.com</span>
+      </div>
+      <div>
+      <Canvas>
+      <SphereWithLight />
+    </Canvas>
       </div>
     </Layout>
   );
