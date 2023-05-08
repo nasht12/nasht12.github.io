@@ -8,6 +8,8 @@ import {
 import Layout from "../../components/Layout/Layout";
 import { Canvas } from '@react-three/fiber';
 import SphereWithLight from '@/components/SphereWithLight/SphereWithLight';
+import WalkingMan from '@/components/WalkingMan/WalkingMan';
+import FlamingoFlight from '@/components/FlamingoFlight/FlamingoFlight';
 import styles from "./about.module.css";
 
 const About: React.FC = () => {
@@ -58,11 +60,16 @@ const About: React.FC = () => {
         </p>
         <span>abhinash.t12@gmail.com</span>
       </div>
-      <div>
+      {/* <div>
       <Canvas>
       <SphereWithLight />
     </Canvas>
-      </div>
+    </div> */}
+
+    <div style={{ marginTop: "10px"}}>
+    {/* <WalkingMan /> */}
+<FlamingoFlight />
+    </div>
     </Layout>
   );
 };
