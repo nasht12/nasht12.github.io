@@ -3,21 +3,6 @@ import { GetServerSideProps } from "next";
 import Layout from "../../components/Layout/Layout";
 import ArticleList from "../../components/ArticleList/ArticleList";
 
-interface ArticlesPageProps {
-  projects: { filename: string; content: string }[];
-}
-
-const AI: React.FC<ArticlesPageProps> = ({ projects }) => {
-  return (
-    <Layout>
-      <h1 style={{ marginTop: "0.5rem" }}><strong>Projects</strong></h1>
-      <ArticleList articles={projects} />
-    </Layout>
-  );
-};
-
-export default AI;
-
 // src/pages/articlesPage.tsx
 export const getServerSideProps: GetServerSideProps = async () => {
   try {
@@ -40,3 +25,20 @@ export const getServerSideProps: GetServerSideProps = async () => {
     };
   }
 };
+
+
+interface ArticlesPageProps {
+  projects: { filename: string; content: string }[];
+}
+
+const AI: React.FC<ArticlesPageProps> = ({ projects }) => {
+  return (
+    <Layout>
+      <h1 style={{ marginTop: "0.5rem" }}><strong>Projects</strong></h1>
+      <ArticleList articles={projects} />
+    </Layout>
+  );
+};
+
+export default AI;
+
