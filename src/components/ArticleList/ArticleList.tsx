@@ -27,8 +27,11 @@ const ArticleList: React.FC<ArticleListProps> = ({ articles }) => {
               onClick={() => toggleContent(article.filename)}
             >
               <div className={styles.dot}></div>
-              {article.content.split("\n")[0].substring(1).trim() ||
+              {/* {article.content.split("\n")[0].substring(1).trim() ||
+                "Loading..."} */}
+                { article.content.trim().split("\n")[0].slice(2, -3) ||
                 "Loading..."}
+               
             </button>
           </div>
         ))}

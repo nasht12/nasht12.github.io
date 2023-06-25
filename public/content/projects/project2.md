@@ -1,4 +1,4 @@
-# Model Tokenizer
+**Model Tokenizer**
 
 Storing data sets on decentralized file store and tokenizing them has good value. Creating this new asset class can incentivize the development of high-quality models and datasets and create new revenue streams for the creators and data labelers. The general idea is to not token gate these datasets and ai models but create a more open and accessible platform for the people, broader communities to make them readily available. The platform proposed in this project aims to be the platform for tokenizing AI models and datasets, enabling open access, collaboration and creating a trusted ecosystem of labeled and verified models and datasets. Leveraging the benefits of blockchain and the decentralization ethos, this project aims to aid the creators economy, making AI models and datasets more accessible, transparent and valuable for everyone.
 
