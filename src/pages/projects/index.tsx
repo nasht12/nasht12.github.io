@@ -4,7 +4,7 @@ import Layout from "../../components/Layout/Layout";
 import ArticleList from "../../components/ArticleList/ArticleList";
 
 // src/pages/articlesPage.tsx
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps = async () => {
   try {
     const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "";
     const res = await fetch(`${apiUrl}/api/projects`);
