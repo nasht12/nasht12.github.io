@@ -1,4 +1,4 @@
-# ERC-3525
+**ERC-3525**
 
 **Introduction**:
 

@@ -1,4 +1,4 @@
-# ERC-998
+**ERC-998**
 
 ERC-998 Composable NFTs, is a standard extension for non-fungible tokens (NFTs) on the Ethereum blockchain. The standard allows NFTs to own other NFTs or fungible tokens, creating a hierarchy of assets. This new standard allows for more creative and dynamic use cases for NFTs, such as creating actionable assets.
 
