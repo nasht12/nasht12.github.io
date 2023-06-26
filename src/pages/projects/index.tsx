@@ -2,6 +2,7 @@
 import { GetServerSideProps } from "next";
 import Layout from "../../components/Layout/Layout";
 import ArticleList from "../../components/ArticleList/ArticleList";
+import HighwayBanner from "@/components/HighwayBanner/HighwayBanner";
 
 // src/pages/articlesPage.tsx
 export const getStaticProps = async () => {
@@ -34,7 +35,8 @@ interface ArticlesPageProps {
 const AI: React.FC<ArticlesPageProps> = ({ projects }) => {
   return (
     <Layout>
-      <h1 style={{ marginTop: "0.5rem" }}><strong>Projects</strong></h1>
+    <HighwayBanner />
+      <h1 style={{ marginTop: "1rem" }}><strong>Projects</strong></h1>
       <ArticleList articles={projects} />
     </Layout>
   );
