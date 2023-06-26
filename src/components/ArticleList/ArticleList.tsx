@@ -29,7 +29,7 @@ const ArticleList: React.FC<ArticleListProps> = ({ articles }) => {
               <div className={styles.dot}></div>
               {/* {article.content.split("\n")[0].substring(1).trim() ||
                 "Loading..."} */}
-                { article.content.trim().split("\n")[0].slice(2, -3) ||
+                { article.content.trim().split("\n")[0].slice(2, -2) ||
                 "Loading..."}
                
             </button>
