@@ -10,6 +10,7 @@ const Menu: React.FC = () => {
     "Web3",
     "Travel",
     "Books",
+    "Misc"
   ];
 
   return (
