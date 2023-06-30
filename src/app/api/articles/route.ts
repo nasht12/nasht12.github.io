@@ -1,12 +1,8 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextResponse } from 'next/server'
 import fs from "fs";
 import path from "path";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  try {
+export async function GET() {
     const articlesDirectory = path.join(
       process.cwd(),
       "public",
@@ -27,10 +23,5 @@ export default async function handler(
       };
     });
 
-    res.status(200).json({ articles });
-  } catch (error) {
-    res
-      .status(500)
-      .json({ error: "An error occurred while fetching articles" });
-  }
+    return NextResponse.json({ articles })
 }

@@ -1,12 +1,8 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextResponse } from 'next/server'
 import fs from "fs";
 import path from "path";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  try {
+export async function GET() {
     const aiDirectory = path.join(process.cwd(), "public", "content", "ai");
     const filenames = fs
       .readdirSync(aiDirectory)
@@ -22,10 +18,5 @@ export default async function handler(
       };
     });
 
-    res.status(200).json({ aiwriteups });
-  } catch (error) {
-    res
-      .status(500)
-      .json({ error: "An error occurred while fetching ai writeups" });
-  }
+    return NextResponse.json({ aiwriteups })
 }

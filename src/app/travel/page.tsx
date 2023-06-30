@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "../../components/Layout/Layout";
 import ImageSlider from "../../components/ImageSlider/ImageSlider";
 import styles from "./travel.module.css";
 
@@ -69,7 +68,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <Layout>
+    <>
       <div style={{ marginTop: "0.5rem" }}>
         {/* <h1>Travel</h1> */}
         <div className="imageSliderContainer">
@@ -114,7 +113,7 @@ const About: React.FC = () => {
         <p>Massachusetts</p>
         <p>Lousiana</p>
       </div>
-    </Layout>
+    </>
   );
 };
 

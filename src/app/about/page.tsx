@@ -5,7 +5,7 @@ import {
   faLinkedin,
   faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
-import Layout from "../../components/Layout/Layout";
+// import Layout from "../../components/Layout/Layout";
 import { Canvas } from '@react-three/fiber';
 import SphereWithLight from '@/components/SphereWithLight/SphereWithLight';
 import WalkingMan from '@/components/WalkingMan/WalkingMan';
@@ -15,7 +15,7 @@ import styles from "./about.module.css";
 const About: React.FC = () => {
 
   return (
-    <Layout>
+    <>
       {/* Your page content goes here */}{" "}
       <p style={{ marginTop: "0.5rem" }}>
         Software engineer based in Seattle with a Bachelor and Master’s Degree
@@ -70,7 +70,7 @@ const About: React.FC = () => {
     {/* <WalkingMan /> */}
 <FlamingoFlight />
     </div>
-    </Layout>
+     </>
   );
 };
 
