@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "../../components/Layout/Layout";
 import styles from "./books.module.css";
 
 const About: React.FC = () => {
@@ -27,7 +26,7 @@ const About: React.FC = () => {
     "Billion Dollar Whale by Tom Wright, Bradley Hope",
   ];
   return (
-    <Layout>
+    <>
       <div>
         <h1 style={{ marginTop: "0.5rem" }}><strong>Reading List</strong></h1>
         <b>2023</b>
@@ -43,7 +42,7 @@ const About: React.FC = () => {
           ))}
         </ul>
       </div>
-    </Layout>
+    </>
   );
 };
 

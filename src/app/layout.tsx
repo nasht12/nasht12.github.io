@@ -1,6 +1,5 @@
 import React, { ReactNode } from "react";
-import Menu from "../Menu/Menu";
-import styles from "./Layout.module.css";
+import Menu from "../components/Menu/Menu";
 
 interface LayoutProps {
   children: ReactNode;
@@ -8,18 +7,21 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <>
+    <html>
+      <body>
       <div style={{ marginTop: "4rem", marginLeft: "6rem" }}>
       <p><strong>Abhinash Tummala</strong></p>      
       </div>
       <main
-        className={`flex min-h-screen items-start justify-between p-24 ${styles.container}`}
+        className={`flex min-h-screen items-start justify-between p-24 `}
+        style={{ display: "flex", minHeight: "100vh", width: "100%"}}
       >
         {" "}
         <Menu />
-        <div className={styles.content}>{children}</div>
+        <div style={{ flexGrow: 1, paddingLeft: "1rem"}}>{children}</div>
       </main>
-    </>
+      </body>
+    </html>
   );
 };
 

@@ -1,15 +1,14 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Menu from "../components/Menu/Menu";
-import About from "./about";
-import Layout from "@/components/Layout/Layout";
+import About from "../app/about/page";
 
 // const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main>
+    <>
       <About />
-    </main>
+    </>
   );
 }

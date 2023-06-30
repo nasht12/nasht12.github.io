@@ -1,6 +1,5 @@
 import React from "react";
 import { GetServerSideProps } from "next";
-import Layout from "../../components/Layout/Layout";
 import fs from "fs";
 import path from "path";
 import { useRouter } from "next/router";
@@ -21,14 +20,14 @@ const Article: React.FC<ArticleProps> = ({ content, data }) => {
   }
 
   return (
-    <Layout>
+    <>
       <h1>{data.title}</h1>
       <div
         dangerouslySetInnerHTML={{
           __html: content,
         }}
       />
-    </Layout>
+    </>
   );
 };
 

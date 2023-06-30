@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import styles from "./ArticleList.module.css";
@@ -16,6 +17,7 @@ const ArticleList: React.FC<ArticleListProps> = ({ articles }) => {
       setVisibleContent(filename);
     }
   };
+  console.log('articles', articles)
 
   return (
     <div className={styles.container}>

@@ -1,12 +1,8 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextResponse } from 'next/server'
 import fs from "fs";
 import path from "path";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  try {
+export async function GET() {
     const projectsDirectory = path.join(
       process.cwd(),
       "public",
@@ -27,10 +23,6 @@ export default async function handler(
       };
     });
 
-    res.status(200).json({ projects });
-  } catch (error) {
-    res
-      .status(500)
-      .json({ error: "An error occurred while fetching project writeups" });
-  }
+    return NextResponse.json({projects})
+
 }
