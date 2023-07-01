@@ -1,5 +1,8 @@
+'use client'
+
 import MarkdownRender from "../MarkdownRender/page";
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 interface Project {
   filename: string;
@@ -10,9 +13,10 @@ interface ProjectListProps {
   projects: Project[];
 }
 
-export default function ProjectList({ projects }: ProjectListProps) {
-    console.log("projects", projects)
-    
+export default function WriteupList({ projects }: ProjectListProps ) {
+    const pathname = usePathname()
+
+    console.log('currentPath', pathname);
   return (
     <>
     <ul>
@@ -21,9 +25,10 @@ export default function ProjectList({ projects }: ProjectListProps) {
           {/* <h3>{project.filename}</h3> */}
           <Link 
           href={{
-            pathname: `/projects/${project.filename}`,
+            pathname: `${pathname}/${project.filename}`,
             // query: project.content, // the data
-          }}>
+          }}
+          style={{ textDecoration: 'none' }}>
           <MarkdownRender content ={project.content.trim().split("\n")[0]} />
           </Link>
           {/* <MarkdownRender content = {project.content}/> */}

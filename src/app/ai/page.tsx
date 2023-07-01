@@ -1,3 +1,5 @@
+import ArticleList from "@/components/ArticleList/page";
+import WriteupList from "@/components/WriteupList/page";
 
 export default async function AI() {
   const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "";
@@ -9,6 +11,7 @@ export default async function AI() {
       <h1 style={{ marginTop: "0.5rem" }}>
         <strong>AI Writeups</strong>
       </h1>
+      <WriteupList projects={data.aiwriteups} />
     </>
   );
 };
