@@ -21,7 +21,7 @@ const About: React.FC = () => {
         Software engineer based in Seattle with a Bachelor and Master’s Degree
         in Computer Science. Interested in all things web3 and AI.
       </p>
-      <div style={{ marginTop: "1rem" }}>
+      <div style={{ marginTop: "1rem", display: "flex", alignItems: "center" }}>
         <div className="icon-wrapper">
           <a
             href="https://github.com/nasht12"
