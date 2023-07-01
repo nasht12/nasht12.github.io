@@ -7,7 +7,7 @@ interface MarkdownRenderProps {
 export default function MarkdownRender({ content }: MarkdownRenderProps) {
   return (
     <div className="content">
-      <ReactMarkdown>{content}</ReactMarkdown>
+      <ReactMarkdown >{content}</ReactMarkdown>
     </div>
   );
 }

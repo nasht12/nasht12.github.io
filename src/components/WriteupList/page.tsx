@@ -1,8 +1,12 @@
 'use client'
 
 import MarkdownRender from "../MarkdownRender/page";
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+
 
 interface Project {
   filename: string;
@@ -19,23 +23,23 @@ export default function WriteupList({ projects }: ProjectListProps ) {
     console.log('currentPath', pathname);
   return (
     <>
-    <ul>
+    <List>
       {projects.map((project, index) => (
-        <li key={index}>
-          {/* <h3>{project.filename}</h3> */}
+        <ListItem  key={index} >
           <Link 
           href={{
             pathname: `${pathname}/${project.filename}`,
             // query: project.content, // the data
           }}
-          style={{ textDecoration: 'none' }}>
-          <MarkdownRender content ={project.content.trim().split("\n")[0]} />
+          style={{ textDecoration: 'none', fontSize:'14px', fontWeight: '200' }}>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+                <ArrowRightIcon />
+                <MarkdownRender content ={project.content.trim().split("\n")[0]} />
+          </div>
           </Link>
-          {/* <MarkdownRender content = {project.content}/> */}
-          <hr />
-        </li>
+        </ListItem>
       ))}
-    </ul>
+    </List>
     </>
   );
 }
