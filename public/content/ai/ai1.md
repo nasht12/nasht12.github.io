@@ -1,4 +1,4 @@
-**Inference is all you need!**
+# Inference is all you need!
 
 In machine learning, inference refers to the process of using a trained model to make predictions or decisions based on new, unseen data. We create these models by training it on a specific task, such as recognizing patterns or making predictions, by providing it with a large number of examples. Once the model is trained, it can be used to make predictions or other wise inferences. _AI inference_ refers to the process of making queries to an AI model using novel inputs and returning the resulting predictions.
 

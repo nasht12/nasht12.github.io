@@ -1,4 +1,4 @@
-**Semantic search - OpenAI + Pinecone**
+# Semantic search - OpenAI + Pinecone
 
 Semantic search is a more sophisticated form of search that goes beyond matching keywords, it takes into consideration the meaning behind the words used in a query. Unlike regular search which mostly matches keywords, regardless of their context or relationships with each other. Semantic search, on the other hand, tries to understand the intent behind the search query, and returns results that are more relevant to the user's actual needs.
 

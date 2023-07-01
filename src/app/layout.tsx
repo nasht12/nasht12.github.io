@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import Menu from "../components/Menu/Menu";
+import './globals.css'
 
 interface LayoutProps {
   children: ReactNode;

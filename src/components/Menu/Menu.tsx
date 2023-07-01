@@ -18,7 +18,7 @@ const Menu: React.FC = () => {
     <div className={styles.menuContainer}>
       <ul className={styles.menuList}>
         {menuItems.map((item, index) => (
-          <Link key={index} href={`/${item.toLowerCase()}`} passHref>
+          <Link key={index} href={`/${item.toLowerCase()}`} passHref style={{ textDecoration: 'none' }}>
             <li className={styles.menuItem}>{item}</li>
           </Link>
         ))}

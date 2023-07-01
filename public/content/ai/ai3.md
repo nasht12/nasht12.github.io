@@ -1,4 +1,4 @@
-**GPT-3 - MS Word add-in**
+# GPT-3 - MS Word add-in
 
 The word document, a staple of modern office work and productivity, has become an integral part of our daily lives. Its popularity can be attributed to its versatility and convenience, allowing users to create and edit a wide range of written materials from business reports to personal letters.
 

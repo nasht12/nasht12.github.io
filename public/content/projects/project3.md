@@ -1,4 +1,4 @@
-**Datanomy**
+# Datanomy
 
 Datanomy is a platform enabling individuals to post bounties, incentivizing the creation of valuable datasets and rewarding contributors with tokens. It is build upon the principles of decentralization, leveraging the capabilities of Filecoin, to ensure the security and immutability of the datasets, establishing trust and integrity in the data economy.
 
