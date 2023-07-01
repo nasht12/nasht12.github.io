@@ -1,4 +1,5 @@
-import ArticleList from "@/components/ArticleList/ArticleList";
+import ArticleList from "@/components/ArticleList/page";
+import WriteupList from "@/components/WriteupList/page";
 
 export default async function Projects() {
   const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "";
@@ -10,7 +11,7 @@ export default async function Projects() {
       <h1 style={{ marginTop: "0.5rem" }}>
         <strong>Projects</strong>
       </h1>
-      <ArticleList articles={data} />
+      <WriteupList projects={data.projects} />
     </>
   );
 };

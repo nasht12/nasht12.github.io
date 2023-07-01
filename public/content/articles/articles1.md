@@ -1,4 +1,4 @@
-**ERC 1155**
+# ERC 1155
 
 **Introduction**:
 

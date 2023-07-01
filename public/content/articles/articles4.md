@@ -1,4 +1,4 @@
-**Solidity Design Patterns**
+# Solidity Design Patterns
 
 Design patterns are a way of organizing and structuring code to improve its efficiency, security, and maintainability. Lets look at some of the common design patterns in solidity
 

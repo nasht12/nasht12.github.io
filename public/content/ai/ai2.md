@@ -1,4 +1,4 @@
-**Inferencing Blockchains**
+# Inferencing Blockchains
 
 Inference API allows developers to access and utilize the inferencing capabilities of a machine learning model. These APIs provide a simple interface for developers to send data to the model and receive the inferencing results. The applications could range from natural language processing, image and video recognition, and predictive analytics.
 
