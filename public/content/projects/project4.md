@@ -1,4 +1,4 @@
-**Banner with moving car on a highway**
+# Banner with moving car on a highway
 
 Decided to brush up my CSS and did a little banner with moving car animation. ChatGPT came to the rescue of speeding things up with animation.
 Started by creating a HighwayBanner component. Tested the basic layout and animation with CSS styling. Once I had that downloaded some images that fit the scene and made the background invisible with remove.ai. 

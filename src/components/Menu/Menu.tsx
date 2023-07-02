@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Link from "next/link";
 import styles from "./Menu.module.css";
@@ -17,7 +18,7 @@ const Menu: React.FC = () => {
     <div className={styles.menuContainer}>
       <ul className={styles.menuList}>
         {menuItems.map((item, index) => (
-          <Link key={index} href={`/${item.toLowerCase()}`} passHref>
+          <Link key={index} href={`/${item.toLowerCase()}`} passHref style={{ textDecoration: 'none' }}>
             <li className={styles.menuItem}>{item}</li>
           </Link>
         ))}

@@ -1,4 +1,4 @@
-**Search is the new cool kid on block, Again!!**
+# Search is the new cool kid on block, Again!!
 
 In recent weeks, the search engine industry has become increasingly competitive as companies look for new and innovative ways to stay ahead of the curve. With the integration of OpenAI's GPT-4 model into Bing, Microsoft has given itself the chance to shake up the search engine space. The ChatGPT-like experience now available on Bing will allow users to ask more up-to-date queries and have a more conversational experience. This move by Microsoft, combined with their recent investment in OpenAI, is a clear sign that the company is looking to make a significant impact in the search engine market and take on the dominant player, Google.
 

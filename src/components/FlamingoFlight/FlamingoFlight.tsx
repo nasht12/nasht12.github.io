@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef, useEffect, useState } from 'react';
 import { Canvas, useLoader, useFrame, useThree } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
