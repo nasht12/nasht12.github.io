@@ -224,7 +224,7 @@ const Travel: React.FC = () => {
   return (
     <>
       <div style={{ marginTop: "0.5rem" }}>
-        <h1>Travel</h1>
+        {/* <h1>Travel</h1> */}
         <ImageListing itemData={itemData} />
       </div>
     </>
