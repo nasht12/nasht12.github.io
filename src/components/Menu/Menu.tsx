@@ -11,7 +11,8 @@ const Menu: React.FC = () => {
     "Web3",
     "Travel",
     "Books",
-    "Misc"
+    "Misc",
+    "Maps"
   ];
 
   return (
