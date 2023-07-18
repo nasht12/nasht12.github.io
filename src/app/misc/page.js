@@ -24,7 +24,7 @@ const Misc = () => {
       </h1>
       
         {/* <GoogleMapCo /> */}
-        <Wrapper apiKey={process.env.NEXT_GOOGLE_MAPS_API_KEY}>
+        <Wrapper apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
           <MyMap />
         </Wrapper>
     </div>
