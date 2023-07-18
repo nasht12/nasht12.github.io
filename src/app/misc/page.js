@@ -1,10 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import HighwayBanner from "@/components/HighwayBanner/HighwayBanner";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
-import GoogleMapCo from "@/components/GoogleMapCo/GoogleMapCo";
 import { Wrapper } from "@googlemaps/react-wrapper";
-import { create } from "domain";
 import { Scene, PerspectiveCamera, AmbientLight, WebGLRenderer, Matrix4 } from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
@@ -44,7 +41,7 @@ function MyMap() {
   useEffect(() => {
     if(!overlayRef.current){
       const instance = new window.google.maps.Map(ref.current, mapOptions);
-      setMap(instance)
+      setMap(instance);
       overlayRef.current = createOverlay(instance);
     }
   }, [])
@@ -92,7 +89,7 @@ function createOverlay(map) {
         if(mapOptions.tilt < 70) {
           mapOptions.tilt +=0.09;
         }
-        else if (mapOptions.zoom < 20) {
+        else if (mapOptions.zoom < 18) {
           mapOptions.zoom += 0.02;
         }
         else if (mapOptions.heading < 100){
