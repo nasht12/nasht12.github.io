@@ -18,7 +18,7 @@ export default function Maps() {
     <div>
       Maps
       <Wrapper
-        apiKey={process.env.NEXT_GOOGLE_MAPS_API_KEY}
+        apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
       >
         <MapComponent />
       </Wrapper>
