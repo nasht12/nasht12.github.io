@@ -6,7 +6,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 const mapOptions = {
   mapId: process.env.NEXT_PUBLIC_MAP_ID,
-  center: { lat: 47.68573, lng: -122.33810 },
+  center: { lat: 47.61195, lng: -122.33860 },
   zoom: 14,
   disableDefaultUI: true,
   heading: 20,
@@ -28,8 +28,8 @@ export default function Maps() {
 
  function MapComponent() {
   const [map, setMap] = useState();
-  const [lat, setLat] = useState("47.68573");
-  const [lng, setLng] = useState("-122.33810");
+  const [lat, setLat] = useState("47.61195");
+  const [lng, setLng] = useState("-122.33860");
   const ref = useRef();
   const markerRef = useRef();
   const overlayRef = useRef();

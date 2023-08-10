@@ -4,6 +4,13 @@ import ImageListing from "../../components/ImageListing/ImageListing";
 import styles from "./travel.module.css";
 
 const Travel: React.FC = () => {
+
+  const urls = [
+    "https://cdn.discordapp.com/attachments/416094051339862016/1100205709133615164/wenatchee_lake.JPG",
+    "https://cdn.discordapp.com/attachments/416094051339862016/1100205711004274778/DSCF7611.JPG",
+    "https://cdn.discordapp.com/attachments/416094051339862016/1100205298226053230/DSCF8881.JPG",
+    "https://cdn.discordapp.com/attachments/416094051339862016/1103365209529262130/DSCF2147.JPG",
+  ];
   const itemData = [
     {
       img:  "https://cdn.discordapp.com/attachments/416094051339862016/1100205710094123048/DSCF7548.JPG",
