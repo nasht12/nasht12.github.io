@@ -5,7 +5,6 @@ import {
   faLinkedin,
   faInstagram,
   faGoogle,
-  faPaperPlane
 } from "@fortawesome/free-brands-svg-icons";
 import styles from "./about.module.css";
 
@@ -47,7 +46,7 @@ const About: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faPaperPlane} />{" "}
+          <FontAwesomeIcon icon={faGoogle} />{" "}
         </a>
       </div>
     </div>

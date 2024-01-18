@@ -8,8 +8,8 @@ import About from "./abhinash/page";
 export default function Home() {
   return (
     <>
-      {/* <About /> */}
-      Notes
+      Main
+      {/* <AnimatedLetters /> */}
     </>
   );
 }
