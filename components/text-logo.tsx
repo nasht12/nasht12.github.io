@@ -9,7 +9,7 @@ const robotoFlex = Roboto_Flex({
 });
 
 export default function TextLogo() {
-  const overlayImages = ['/bainbridge.JPG', '/bainbridge2.JPG', '/paradise.JPG', '/columbia.JPG'];
+  const overlayImages = ['/abhi2.gif'];
   const [currentOverlayImage, setCurrentOverlayImage] = useState(0);
 
   useEffect(()=> {
@@ -19,7 +19,7 @@ export default function TextLogo() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentOverlayImage((currentOverlayImage + 1) % overlayImages.length);
-    }, 10000);
+    }, 10);
     return () => clearInterval(timer);
   }, [currentOverlayImage, overlayImages.length]);
 

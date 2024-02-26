@@ -12,6 +12,8 @@ import ImageFrame from "@/components/image-frame";
 import IconMenu from "@/components/icon-menu";
 import TextLogo from "@/components/text-logo";
 import { InfiniteMovingCardsDemo } from "@/components/moving-notes";
+import { EvervaultCard } from "@/components/evervault-card";
+import Hero from "@/components/hero";
 
 const robotoFlex = Roboto_Flex({
   weight: '400',
@@ -20,9 +22,10 @@ const robotoFlex = Roboto_Flex({
 
 export default function Home() {
   return (
-    <div className="flex-col items-center justify-center md:items-start">
-      <TextLogo />
-      <Social />
+    <div className="">
+      <Hero />
+      {/* <TextLogo /> */}
+      {/* <Social /> */}
     </div>
   );
 }

@@ -29,7 +29,7 @@ export default function Social() {
           className={robotoFlex.className}
         />
       </div>
-      <div className="flex gap-2 mt-20 md:mt-40 items-center justify-center">
+      {/* <div className="flex gap-2 mt-20 md:mt-40 items-center justify-center">
         <Link href="https://github.com/nasht12">
           <GitHubLogoIcon className="h-6 w-6 md:h-10 md:w-10 border-2 border-black p-1 hover:bg-blue-300 transition-all duration-500 ease-in-out" />
         </Link>
@@ -46,7 +46,7 @@ export default function Social() {
             <span className="hidden md:block">Seattle, Washington</span>{" "}
           </span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

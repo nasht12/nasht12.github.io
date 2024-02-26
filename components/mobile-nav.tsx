@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 export function MobileNav() {
   return (
-    <div className="flex md:hidden items-center justify-center">
+    <div className="flex md:hidden items-center justify-center mb-20">
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger asChild>
