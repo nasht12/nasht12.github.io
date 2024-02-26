@@ -3,8 +3,8 @@ import React, { useEffect, useRef } from 'react';
 import anime from 'animejs';
 
 const RotatingText = ({ texts, className }: { texts: string[], className?: string }) => {
-  const textRef = useRef(null);
-
+  const textRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     let animationIndex = 0;
     const animateText = () => {
