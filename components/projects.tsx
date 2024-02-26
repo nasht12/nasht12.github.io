@@ -20,14 +20,14 @@ export default function Projects() {
         </a>
         <a href="https://hatao.vercel.app/" target="_blank">
           <div
-            className={`w-64 h-16 hover:bg-blue-300 bg-gray-100 flex items-center justify-center hover:text-white hover:scale-110 transform transition-transform${robotoFlex.className}`}
+            className={`w-64 h-16 hover:bg-blue-300 bg-gray-100 flex items-center justify-center hover:text-white hover:scale-110 transform transition-transform ${robotoFlex.className}`}
           >
             Ranque
           </div>
         </a>
         <a href="" target="_blank">
           <div
-            className={`w-64 h-16 hover:bg-blue-300 bg-gray-100 flex items-center justify-center hover:text-white hover:scale-110 transform transition-transform${robotoFlex.className}`}
+            className={`w-64 h-16 hover:bg-blue-300 bg-gray-100 flex items-center justify-center hover:text-white hover:scale-110 transform transition-transform ${robotoFlex.className}`}
           >
             Kim-bhoh
           </div>
