@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/components/tracing-beam";
 import Link from "next/link";
 
@@ -10,7 +8,7 @@ export default function Bookmarked() {
     <div className="w-full m-4">
       <TracingBeam className="mt-20">
         <div className="max-w-2xl mx-auto antialiased relative ">
-          {dummyContent.map((item, index) => (
+          {savedContent.map((item, index) => (
             <div key={`content-${index}`} className="mb-10 flex gap-4">
               <Link href={item.url}>
                 <p className={"text-xl mb-4"}>{item.title}</p>
@@ -26,7 +24,7 @@ export default function Bookmarked() {
   );
 }
 
-const dummyContent = [
+const savedContent = [
   {
     title: "YC - Request for startups",
     badge: "Startup",

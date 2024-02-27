@@ -53,7 +53,7 @@ export const EvervaultCard = ({
           randomString={randomString}
         />
         <div className="relative z-10 flex items-center justify-center">
-          <div className="relative h-44 w-72  flex items-center justify-center text-white font-bold text-4xl">
+          <div className="relative h-44 w-44  flex items-center justify-center text-white font-bold text-4xl">
             <div className="absolute w-full h-full bg-white/[0.8] dark:bg-black/[0.8] blur-sm " />
             <span className={`dark:text-white text-black z-20 w-72 h-32 text-8xl flex items-center justify-center relative ${robotoFlex.className}`}>
               A[

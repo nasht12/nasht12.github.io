@@ -1,10 +1,8 @@
-"use client";
-import React, { useState, useRef, useEffect } from "react";
 import { LayoutGrid } from "@/components/layout-grid";
 
 export default function Gallery() {
   return (
-    <div className="h-screen py-20 w-full">
+    <div className="h-screen w-full">
       <LayoutGrid cards={cards} />
     </div>
   );
