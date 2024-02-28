@@ -22,7 +22,7 @@ export const notesContent = [
           <b>Actions:</b> This changes how we move data between the client and
           server. The data handling could be seamless, and React handles
           everything from submissions to state updates. With useOptimistic, we
-          can optimistically update the UI’s which can makes snappier user
+          can optimistically update the UI&apos;s which can makes snappier user
           experiences.
         </p>
         <p>
@@ -68,7 +68,7 @@ export const notesContent = [
           our application horizontally. We handle thousands of concurrent
           requests but down the line we might reach a point where the
           application might slower and even might break down. Database is the
-          culprit. Adding more cloned servers wouldn’t solve this issue. Lets
+          culprit. Adding more cloned servers wouldn&apos;t solve this issue. Lets
           look at the ways to go about solving this. 1. Replicate the existing
           db into master-slave table where reads are handled by the slaves and
           writes to the master. Add more RAM to the master. With this path as
@@ -82,7 +82,7 @@ export const notesContent = [
           <b>Caching</b> With scalable database we store terabytes of data
           breaking no sweat. But the users might still experience slow load
           times when trying to fetch/load data. We can solve this by
-          implementing cache. In its simplest form, it’s basically a key-value
+          implementing cache. In its simplest form, it&apos;s basically a key-value
           pair. And should be placed between our application and server storage.
           When the client/application is trying to retrieve something, it should
           first check the cache for that data. Only when not available should be
@@ -134,18 +134,18 @@ export const notesContent = [
       <>
         <p>
           Three key anti-fragility features. <br />
-          One, they don’t scale up or slow down with load or stress.
-          <br /> Two, they don’t have modes, which means they do the same
+          One, they don&apos;t scale up or slow down with load or stress.
+          <br /> Two, they don&apos;t have modes, which means they do the same
           operations in all conditions.
-          <br /> Three, if they have any variation, it’s to do less work in
+          <br /> Three, if they have any variation, it&apos;s to do less work in
           times of stress so they can perform better when you need them most.
         </p>
         <p>
           Applying constant work patterns. Examples of constant work:
           <br /> Health checks - Hard to think of any function more critical
           than health checks. Instance, server looses power or networking,
-          health checks notices and redirects the traffic elsewhere If DNS isn’t
-          sending traffic to healthy endpoints, there’s no other opportunity to
+          health checks notices and redirects the traffic elsewhere If DNS isn&apos;t
+          sending traffic to healthy endpoints, there&apos;s no other opportunity to
           recover
         </p>
       </>
@@ -169,7 +169,7 @@ export const notesContent = [
           our customers. Designed as a single monolithic system, single system
           that handled all media assets. As system complexity increased
           limitations began to show. - Coupled functionality. - Given the
-          complexity and effort involved in integrating new modules, there's a
+          complexity and effort involved in integrating new modules, there&apos;s a
           natural bias towards augmenting existing modules rather than creating
           new ones. This means that when new functionalities are needed,
           developers might prefer to extend the capabilities of an existing
