@@ -1,12 +1,10 @@
 "use client";
 import React from "react";
-import { TracingBeam } from "@/components/tracing-beam";
 import Link from "next/link";
 
 export default function Bookmarked() {
   return (
     <div className="w-full m-4">
-      <TracingBeam className="mt-20">
         <div className="max-w-2xl mx-auto antialiased relative ">
           {savedContent.map((item, index) => (
             <div key={`content-${index}`} className="mb-10 flex gap-4">
@@ -19,7 +17,6 @@ export default function Bookmarked() {
             </div>
           ))}
         </div>
-      </TracingBeam>
     </div>
   );
 }

@@ -26,7 +26,7 @@ export default function RootLayout({
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
           <main className="w-screen h-screen flex flex-col md:flex-row">
             <MobileNav />
-            <div className="md:w-4/5 flex items-center justify-center">
+            <div className="md:w-4/5 flex items-center overflow-auto justify-center">
               {children}
             </div>
             <div className="w-full md:w-1/5 h-auto flex flex-col-reverse md:flex-row items-center justify-center transition-all duration-500 ease-in-out transform">

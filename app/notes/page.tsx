@@ -2,7 +2,6 @@
 import React, { useState} from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
-import { TracingBeam } from "@/components/tracing-beam";
 import Link from "next/link";
 import {
     Tabs,
@@ -17,7 +16,7 @@ import { savedContent } from "./data/savedContent";
 export default function Notes() {
 
   return (
-    <div className="w-[700px] ">
+    <div className="w-full max-w-full md:w-[700px]">
       <Tabs defaultValue="notes">
         <TabsList className="grid w-full grid-cols-2">
           <TabsTrigger value="notes">Notes</TabsTrigger>

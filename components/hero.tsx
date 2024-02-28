@@ -1,5 +1,5 @@
 import React from "react";
-import { EvervaultCard, Icon } from "./evervault-card";
+import { ABEvervaultCard, Icon } from "./evervault-ab-card";
 import RotatingText from "./moving-letters";
 import { Roboto_Flex } from 'next/font/google';
 
@@ -16,7 +16,7 @@ export default function Hero() {
       <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
 
-      <EvervaultCard text="hover" />
+      <ABEvervaultCard text="hover" />
       <div className="bg-gray flex-col mt-8">
         <span
           className={`flex items-center justify-center transition-all duration-500 ease-in-out transform text-3xl md:text-3xl font-semibold ${robotoFlex.className}`}

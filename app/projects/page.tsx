@@ -1,30 +1,26 @@
-"use client"
-import Link from "next/link"
-import { motion, useScroll, useSpring } from "framer-motion"
+import { EvervaultCard, Icon } from "@/components/evervault-card";
+import Link from "next/link";
 
+export default function Projects() {
 
-export default function Bookmarked() {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
   return (
     <>
-    <motion.div
-        className="fixed top-0 left-0 right-0 h-2.5 bg-red-500 origin-right"
-        style={{ scaleX }}
-      />
-      <div className="max-w-2xl mx-auto antialiased relative ">
+      <div className="w-[700px] h-[600px] p-2 overflow-auto antialiased relative grid md:grid-cols-2 no-scrollbar">
         {projectContent.map((item, index) => (
-          <div key={`content-${index}`} className="mb-10 flex gap-4">
-            <Link href={item.url}>
-              <p className={"text-xl mb-4"}>{item.title}</p>
+          <div
+            key={`content-${index}`}
+            className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-xs mx-auto p-4 relative h-[16rem]"
+          >
+            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
+            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
+            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
+            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
+            <EvervaultCard text={item?.title} />
+            <Link href={item?.url}>
+              <h2 className="dark:text-white text-black mt-4 text-sm">
+                {item?.badge}
+              </h2>
             </Link>
-            <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
-              {item.badge}
-            </h2>
           </div>
         ))}
       </div>
@@ -34,9 +30,9 @@ export default function Bookmarked() {
 
 const projectContent = [
   {
-    title: "AI College counselor",
-    badge: "Savant Seal",
-    url: "https://savantseal.vercel.com/",
+    title: "Savant Seal",
+    badge: "AI College counselor",
+    url: "https://savantseal.vercel.app/",
   },
   {
     title: "Ranque",
