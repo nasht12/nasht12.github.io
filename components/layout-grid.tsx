@@ -26,11 +26,11 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   };
 
   return (
-    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 ">
+    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3 overflow-auto max-w-7xl mx-auto gap-4 ">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
-            onClick={() => handleClick(card)}
+            // onClick={() => handleClick(card)}
             className={cn(
               card.className,
               "relative overflow-hidden",
@@ -69,7 +69,7 @@ const BlurImage = ({ card }: { card: Card }) => {
       onLoad={() => setLoaded(true)}
       className={cn(
         "object-cover object-top absolute inset-0 h-full w-full transition duration-200",
-        loaded ? "blur-none" : "blur-md"
+        loaded ? "blur-none" : "blur-none"
       )}
       alt="thumbnail"
     />
@@ -78,7 +78,7 @@ const BlurImage = ({ card }: { card: Card }) => {
 
 const SelectedCard = ({ selected }: { selected: Card | null }) => {
   return (
-    <div className="bg-transparent h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]">
+    <div className="relative top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-transparent h-full w-full flex flex-col justify-end rounded-lg shadow-2xl z-[60]">
       <motion.div
         initial={{
           opacity: 0,
@@ -86,9 +86,9 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
         animate={{
           opacity: 0.6,
         }}
-        className="absolute inset-0 h-full w-full bg-black opacity-60 z-10"
+        className="absolute inset-0 h-auto w-auto opacity-60 z-10"
       />
-      <motion.div
+      {/* <motion.div
         initial={{
           opacity: 0,
           y: 100,
@@ -104,7 +104,7 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
         className="relative px-8 pb-4 z-[70]"
       >
         {selected?.content}
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };

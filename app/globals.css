@@ -74,3 +74,48 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* styles/globals.css */
+
+/* Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+}
+
+
+#progress {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  transform: rotate(-90deg);
+}
+
+circle {
+  stroke-dashoffset: 0;
+  stroke-width: 15%;
+  fill: none;
+}
+
+.bg {
+  stroke: var(--accent);
+  opacity: 0.3;
+}
+
+#progress .indicator {
+  stroke: var(--accent);
+}
