@@ -66,28 +66,28 @@ const cards = [
     content: <SkeletonOne />,
     className: "md:col-span-2",
     thumbnail:
-      "/bainbridge2.jpg",
+      "/bainbridge2.JPG",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
     thumbnail:
-      "/bainbridge.jpg",
+      "/bainbridge.JPG",
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
     thumbnail:
-      "/goldengarden.jpg",
+      "/goldengarden.JPG",
   },
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-2",
     thumbnail:
-      "/columbia.jpg",
+      "/columbia.JPG",
   },
 ];
 
@@ -102,18 +102,18 @@ const cardsTwo = [
     id: 6,
     content: <SkeletonTwo />,
     className: "col-span-1",
-    thumbnail: "/cascades.jpg",
+    thumbnail: "/cascades.JPG",
   },
   {
     id: 7,
     content: <SkeletonThree />,
     className: "col-span-1",
-    thumbnail: "/greenlake2.jpg",
+    thumbnail: "/greenlake2.JPG",
   },
   {
     id: 8,
     content: <SkeletonFour />,
     className: "md:col-span-2",
-    thumbnail: "/goldengarden2.jpg",
+    thumbnail: "/goldengarden2.JPG",
   },
 ];
