@@ -201,12 +201,6 @@ export const notesContent = [
     title: "Inference is all you need",
     slug: "inference-is-all-you-need",
     badge: "AI",
-    references: [],
-  },
-  {
-    title: "Inference is all you need",
-    slug: "inference-is-all-you-need",
-    badge: "AI",
     description: (
       <>
         <p>
