@@ -1,11 +1,10 @@
-import { BookmarkIcon, CameraIcon, GitHubLogoIcon, Pencil2Icon, PersonIcon, RocketIcon } from '@radix-ui/react-icons'
+import { BookmarkIcon, CameraIcon, GitHubLogoIcon, LinkedInLogoIcon, Pencil2Icon, PersonIcon, RocketIcon } from '@radix-ui/react-icons'
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-
 import Link from 'next/link'
 import React from 'react'
 
@@ -71,6 +70,18 @@ export default function IconMenu() {
           </TooltipTrigger>
           <TooltipContent side={"right"} className="bg-black text-white">
             <p>Github</p>
+          </TooltipContent>
+        </Tooltip>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Link href="https://www.linkedin.com/in/abhinashtummala/">
+              <div className="flex items-center justify-center m-4 gap-2">
+                <LinkedInLogoIcon className="h-6 w-6 md:h-10 md:w-10 border-2 border-black p-1 bg-transparent hover:bg-blue-300 transition-all duration-500 ease-in-out" />
+              </div>
+            </Link>
+          </TooltipTrigger>
+          <TooltipContent side={"right"} className="bg-black text-white">
+            <p>LinkedIn</p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
